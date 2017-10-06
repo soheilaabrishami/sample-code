@@ -1,0 +1,28 @@
+All codes are written in python. 
+
+My submission folder contains:
+1. 5 .ipynb files corresponding to 5 questions.
+2. The pickle of my regression model pre_tip.pkl.(I was not able to submit the model due to the big size of the model.
+Please build and save the model by running the corresponding section in the question4.ipynb) 
+3. A python file is provided to make predictions tip_prediction.py.
+
+-----------------------------------------------------------
+
+In order to run the prediction model use the tip_prediction.predict(data), where data is any 2015 raw dataframe from given url: http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml
+
+
+
+-----------------------------------------------------------
+The library and packages used for the code challange:
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+from sklearn.ensemble import RandomForestRegressor
+from sklearn import cross_validation
+from sklearn.metrics import mean_squared_error
+from scipy.stats import lognorm, ttest_ind, f_oneway
+import pickle
+import warnings
+
+
